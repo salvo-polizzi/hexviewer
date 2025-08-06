@@ -1,3 +1,17 @@
+/* This program is a simple "hexdump" emulator and what attempts to do
+ * is to simply display a specified file in binary using the hexadecimal 
+ * format.
+ *
+ * The format used print 16 bytes, following the implementation of the real
+ * hexdump and the ASCII printable characters.
+ *
+ *+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+ *     OFFSET     |      HEX BINARY     | ASCII PRINTABLE |
+ *+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+ * X X X X X X X X|X X X X X X X X X X X|X X X X X X X X X| 
+ *+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+ *
+ *
 #include<stdio.h>
 #include<stdint.h>
 
